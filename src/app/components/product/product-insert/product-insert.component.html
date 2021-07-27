@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <form (submit)="createProduct()">
+    <div class="mb-3">
+      <label for="name" class="form-label" >Nome:</label>
+      <input type="text" class="form-control" id="name" name="name" [(ngModel)]="product.name" required>
+    </div>
+    <div class="mb-3">
+      <label for="price" class="form-label">Preço:</label>
+      <input type="text" class="form-control" id="price" name="price" [(ngModel)]="product.price"  required>
+    </div>
+    <button type="submit" class="btn btn-info">Cadastrar</button>
+  </form>
+
+</div>

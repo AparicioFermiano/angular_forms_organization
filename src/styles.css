@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+  color: azure !important;
+  background-color: #272727 !important;
+  font-size: 18px !important;
+}
+
+.msg-error{
+  background-color: #ff5151 !important;
+  color: #fff6f6 !important
+
+
+}
+
+
+.msg-sucess{
+  background-color: #50fa6c !important;
+  color: #0c0b0b !important
+}

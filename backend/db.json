@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "name": "Maça",
+      "price": "6.5",
+      "id": 3
+    },
+    {
+      "name": "Alface Americano",
+      "price": "2",
+      "id": 4
+    },
+    {
+      "name": "Macarrão com molho",
+      "price": "23,30",
+      "id": 5
+    },
+    {
+      "name": "Feijão",
+      "price": "10,54",
+      "id": 6
+    },
+    {
+      "name": "Macarrão",
+      "price": "12,45",
+      "id": 7
+    },
+    {
+      "name": "Manteiga",
+      "price": "4,25",
+      "id": 8
+    },
+    {
+      "name": "Marmelada",
+      "price": "3.5",
+      "id": 9
+    },
+    {
+      "name": "Mandioca",
+      "price": "12.50",
+      "id": 10
+    }
+  ]
+}

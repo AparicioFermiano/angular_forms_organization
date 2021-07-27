@@ -1,0 +1,8 @@
+nav .a-person{
+  color: aliceblue;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+nav .a-person:hover{
+  color: rgb(187, 187, 187);
+}

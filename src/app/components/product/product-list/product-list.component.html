@@ -1,0 +1,30 @@
+<div class="container mt-5 d-flex">
+  <label for="filter" class="my-auto font-weight-bold">Filtro:</label>
+  <input [(ngModel)]="filterProducts" class="form-control ms-2" id="filter">
+</div>
+<div class="container mt-5">
+  <div *ngIf="Loading" class="d-flex justify-content-center">
+    <div class="spinner-grow" role="status">
+      <span class="sr-only"></span>
+    </div>
+  </div>
+  <h3 *ngIf="FilterProducts.length <= 0 && Loading == false" class="text-white text-center">Produto não encontrado!</h3>
+  <table *ngIf="FilterProducts.length > 0" class="table text-white text-center">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of FilterProducts">
+        <td class="align-middle">{{ product.name }}</td>
+        <td class="align-middle">{{ product.price | replace: ',' : '.' | currency:'BRL' }}</td>
+        <td><button routerLink="/update/{{ product.id }}" class="btn btn-primary me-2"><i
+              class="bi bi-pencil"></i></button><button (click)="onDelete(product.id)" class="btn btn-danger"><i
+              class="bi bi-trash"></i></button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
